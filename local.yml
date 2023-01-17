@@ -1,5 +1,5 @@
 - hosts: localhost
-  connecttion: local
+  connection: local
   become: true
 
   pre_tasks:
