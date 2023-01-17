@@ -3,11 +3,15 @@
   become: true
 
   pre_tasks:
-    - name: update repositories
+    - name: Update Pacman
       pacman:
         update_cache: yes
+        upgrade: yes
+      changed_when: False
+    - name: Update Apt
       apt:
         update_cache: yes
+        upgrade: yes
       changed_when: False
       
   tasks:
