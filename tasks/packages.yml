@@ -5,3 +5,11 @@
       - git
       - ansible
       - vim
+
+  apt:
+    name:
+      - htop
+      - git
+      - ansible
+      - vim
+
